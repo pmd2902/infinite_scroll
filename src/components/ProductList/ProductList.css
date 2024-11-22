@@ -1,0 +1,40 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.product h2 {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.product:hover {
+  background-color: #dddbdb;
+  scale: 1.05;
+  transition-duration: 200ms;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+span {
+  width: 100%;
+  font-size: 3em;
+  padding: 10px;
+}
